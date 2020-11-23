@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "b309bc18-ae73-4444-a0c9-6797e866cfd2",
+		"name": "Links",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Short Url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://127.0.0.1:3333\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/links",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"links"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Url",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/links/Fr95S",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"links",
+						"Fr95S"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Statistics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/links/Fr95S/stats",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"links",
+						"Fr95S",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
