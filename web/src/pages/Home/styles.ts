@@ -51,7 +51,6 @@ export const ErrorMessage = styled.div`
   }
 `;
 
-
 export const ResultContainer = styled.div`
   width: 100%;
   margin-top: 4rem;

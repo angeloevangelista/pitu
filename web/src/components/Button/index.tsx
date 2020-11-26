@@ -15,17 +15,15 @@ const Button: React.FC<IButtonProps> = ({
   iconAlign,
   backgroundColor,
   ...rest
-}) => {
-  return (
-    <Container
-      {...rest}
-      iconAlign={iconAlign ?? 'right'}
-      backgroundColor={backgroundColor}
-    >
-      {children}
-      {Icon && <Icon size={20} />}
-    </Container>
-  );
-};
+}) => (
+  <Container
+    {...rest}
+    iconAlign={iconAlign ?? 'right'}
+    backgroundColor={backgroundColor}
+  >
+    {children}
+    {Icon && <Icon size={20} />}
+  </Container>
+);
 
 export default Button;

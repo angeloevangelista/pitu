@@ -30,7 +30,7 @@ export const Container = styled.div`
     transition: background-color 0.25s;
 
     &:hover {
-      background: ${(props) => darken(0.1, '#2793e6')};
+      background: ${darken(0.1, '#2793e6')};
     }
 
     svg {
@@ -38,7 +38,6 @@ export const Container = styled.div`
     }
   }
 `;
-
 
 export const ErrorContainer = styled.div`
   display: flex;

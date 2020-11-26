@@ -1,6 +1,6 @@
-import axios from 'axios';
+import axios, { AxiosInstance } from 'axios';
 
-const baseAPI = (baseURL: string) => {
+const baseAPI = (baseURL: string): AxiosInstance => {
   const api = axios.create({
     baseURL,
   });

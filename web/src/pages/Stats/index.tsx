@@ -1,3 +1,4 @@
+/* eslint-disable import/no-duplicates */
 import React, { useEffect, useState } from 'react';
 import { FiAlertTriangle, FiArrowLeft } from 'react-icons/fi';
 import { Link, useRouteMatch } from 'react-router-dom';
@@ -11,7 +12,9 @@ import Loading from '../../components/Loading';
 
 import ShortenerService, { IURL } from '../../services/shortenerService';
 
-import { Container, Content, Card, ErrorContainer } from './styles';
+import {
+  Container, Content, Card, ErrorContainer,
+} from './styles';
 
 const Stats: React.FC = () => {
   const { params: routeParams } = useRouteMatch<{ code: string }>();

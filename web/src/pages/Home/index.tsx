@@ -108,7 +108,8 @@ const Home: React.FC = () => {
               </Button>
             </div>
             <p>
-              Para acompanhar as estatísticas, acesse{' '}
+              Para acompanhar as estatísticas, acesse
+              {' '}
               <Link to={`${code}/stats`}>aqui.</Link>
             </p>
           </ResultContainer>
