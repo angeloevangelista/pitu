@@ -62,7 +62,7 @@ export const ResultContainer = styled.div`
   border-radius: 0.4rem;
   text-align: center;
 
-  div {
+  > div {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 8fr 2fr;
