@@ -1,6 +1,8 @@
 import { AxiosInstance } from 'axios';
 import baseAPI from './api';
 
+import variables from '../config/variables';
+
 export interface IURL {
   id: number;
   url: string;
@@ -15,7 +17,7 @@ class ShortenerService {
   private api: AxiosInstance;
 
   constructor() {
-    this.api = baseAPI('http://127.0.0.1:3333');
+    this.api = baseAPI(variables.API_BASE as string);
   }
 
   async getLink(code: string): Promise<IURL> {

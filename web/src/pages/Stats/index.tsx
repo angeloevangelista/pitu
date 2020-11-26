@@ -4,6 +4,8 @@ import { Link, useRouteMatch } from 'react-router-dom';
 import { parseISO, formatRelative } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 
+import variables from '../../config/variables';
+
 import Header from '../../components/Header';
 import Loading from '../../components/Loading';
 
@@ -54,7 +56,7 @@ const Stats: React.FC = () => {
         {isLoading && <Loading />}
         {shortenedUrl && (
           <>
-            <strong>{`${window.location.origin}/${shortenedUrl.url_code}`}</strong>
+            <strong>{`${variables.APP_HOST}/${shortenedUrl.url_code}`}</strong>
 
             <p>Redireciona para</p>
             <a href={shortenedUrl.url}>{shortenedUrl.url}</a>

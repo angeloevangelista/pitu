@@ -1,7 +1,9 @@
 import React, { FormEvent, useCallback, useState } from 'react';
-import { FiLink, FiArrowRight,FiAlertCircle } from 'react-icons/fi';
+import { FiLink, FiArrowRight, FiAlertCircle } from 'react-icons/fi';
 import { BiCopy } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
+
+import variables from '../../config/variables';
 
 import Header from '../../components/Header';
 import Input from '../../components/Input';
@@ -94,7 +96,7 @@ const Home: React.FC = () => {
               <Input
                 autoFocus
                 readOnly
-                value={`${window.location.origin}${window.location.pathname}${code}`}
+                value={`${variables.APP_HOST}/${code}`}
                 ref={shortenedUrlRef}
               />
               <Button
