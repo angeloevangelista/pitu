@@ -10,11 +10,23 @@
   </p>
 </p>
 
+# Indice
+
+- [Por quê Pitu?](#por-quê-pitu?)
+- [Teste o Pitu](#teste-o-pitu)
+- [Como executar](#como-executar)
+  - [Backend / Server](#backend-/-server)
+  - [Frontend / Web](#frontend-/-web)
+
 # Por quê Pitu?
 
 O pitu, ou Lagosta-de-água-doce, é um camarão que nasce, pasme, em águas doces e, em sua vida adulta pode chegar a atingir até 50cm de comprimento, incrivel não?
 
 O Pitu nasceu para fazer o processo inverso: Você começa com uma url grande e, no fim, você terá uma URL bem menor... Enfim, seu camarãozinho de link ;)
+
+# Teste o Pitu
+
+Aqui vai ter a tela e o projeto publicado
 
 # Como executar
 
@@ -45,7 +57,9 @@ Com o projeto aberto no seu terminal, entre na pasta `server` e, lá, execute o 
 
 **Configurações**
 
-Configure as variáveis de ambiente em um arquivo na raiz chamado `.env`. O arquivo `.env.example` contém as chaves que você precisará preencher.
+Configure as variáveis de ambiente em um arquivo na raiz chamado `.env`.
+
+Use o `.env.example` para saber as chaves.
 
 **Execução**
 
@@ -57,4 +71,38 @@ npm run dev
 # ou
 
 yarn dev
+```
+
+## Frontend / Web
+
+Requisitos para executar o frontend:
+
+- Ter o [Node Js](https://nodejs.org/en/) instalado na sua máquina.
+
+**Dependências**
+
+Com a raiz do projeto aberta no seu terminal, entre na pasta `web` e, lá, execute o comando `npm install`, para baixar as dependências, ou `yarn`, se preferir.
+
+**Configurações**
+
+As variáveis de ambiente podem ser configuradas para 2 ambientes possíveis:
+
+| Arquivo          | Ambiente          |
+| ---------------- | ----------------- |
+| .env.example     | Apenas um exemplo |
+| .env.development | Desenvolvimento   |
+| .env.production  | Produção          |
+
+Use o `.env.example` para saber as chaves.
+
+**Execução**
+
+Inicie o projeto com o script `start`:
+
+```bash
+npm run start
+
+# ou
+
+yarn start
 ```
