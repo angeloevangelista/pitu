@@ -7,6 +7,7 @@
   "author": "Angelo Evangelista<angeloevan.ane@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "tsc && node ./dist/server.js",
     "dev": "ts-node-dev src/server.ts --transpile-only --ignore node_modules/"
   },
   "dependencies": {
