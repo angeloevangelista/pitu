@@ -17,7 +17,7 @@ class ShortenerService {
   private api: AxiosInstance;
 
   constructor() {
-    this.api = baseAPI(variables.API_BASE as string);
+    this.api = baseAPI(variables.API_BASE);
   }
 
   async getLink(code: string): Promise<IURL> {
