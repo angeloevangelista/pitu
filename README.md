@@ -28,6 +28,9 @@ O Pitu nasceu para fazer o processo inverso: Você começa com uma url grande e,
 
 Link do projeto publicado: [https://pitu.vercel.app/](https://pitu.vercel.app/)
 
+![Pitu - Preview 01](./.github/images/preview-01.png)
+![Pitu - Preview 02](./.github/images/preview-02.png)
+
 # Como executar
 
 Primeiramente, clone este repositório na sua máquina utilizando a CLI do [Git](https://git-scm.com/):
