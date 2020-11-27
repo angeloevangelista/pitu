@@ -26,7 +26,7 @@ O Pitu nasceu para fazer o processo inverso: Você começa com uma url grande e,
 
 # Teste o Pitu
 
-Aqui vai ter a tela e o projeto publicado
+Link do projeto publicado: [https://pitu.vercel.app/](https://pitu.vercel.app/)
 
 # Como executar
 
