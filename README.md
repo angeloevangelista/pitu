@@ -17,7 +17,7 @@
 - [Como executar](#como-executar)
   - [Backend / Server](#backend-/-server)
   - [Frontend / Web](#frontend-/-web)
-- [Passwords](#passwords)
+<!-- - [Passwords](#passwords) -->
 
 # Por quê Pitu?
 
@@ -111,7 +111,7 @@ npm run start
 yarn start
 ```
 
-# Passwords
+<!-- # Passwords
 
 Abaixo estão os passwords dados durante a semana.
 
@@ -120,4 +120,4 @@ Abaixo estão os passwords dados durante a semana.
 1. ESTUDAR
 1. PRATICAR
 1. PROFISSIONAL
-1. SUCESSO
+1. SUCESSO -->
