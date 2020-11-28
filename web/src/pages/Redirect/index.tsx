@@ -11,7 +11,7 @@ import { Container, ErrorContainer } from './styles';
 const Redirect: React.FC = () => {
   const { params: routeParams } = useRouteMatch<{ code: string }>();
 
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
