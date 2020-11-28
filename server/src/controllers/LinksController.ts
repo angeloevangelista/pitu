@@ -1,12 +1,26 @@
 import { Request, Response } from 'express';
 
-import generateCode from '../util/generateCode';
 import Link from '../models/link';
 import linksRepository from '../database/repositories/linksRepository';
+
+import generateCode from '../util/generateCode';
+import checkLinkIsValid from '../util/checkLinkIsValid';
 
 const linksController = {
   async create(request: Request, response: Response) {
     const link = request.body as Link;
+
+    if (!(link && link.url))
+      return response.status(400).json({ message: 'Invalid link' });
+
+    if (link.url.substring(0, 4) !== 'http') {
+      link.url = `http://${link.url}`;
+    }
+
+    const validLink = await checkLinkIsValid(link.url);
+
+    if (!validLink)
+      return response.status(400).json({ message: 'Invalid link' });
 
     link.url_code = generateCode();
     link.hits = 0;
