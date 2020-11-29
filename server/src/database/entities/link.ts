@@ -17,7 +17,7 @@ const LinkEntity = database.define<ILinkEntity, ILinkCreationAttributes>(
       allowNull: false,
     },
     url: {
-      type: Sequelize.STRING(255),
+      type: Sequelize.STRING(1000),
       allowNull: false,
     },
     url_code: {
